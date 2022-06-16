@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="price_initial_slider_values">
+        <item>0.0</item>
+        <item>200000.0</item>
+    </array>
+    <array name="acceleration_initial_slider_values">
+        <item>0.0</item>
+        <item>25.0</item>
+    </array>
+    <array name="power_initial_slider_values">
+        <item>0.0</item>
+        <item>1000.0</item>
+    </array>
+    <array name="range_initial_slider_values">
+        <item>0.0</item>
+        <item>1000.0</item>
+    </array>
+    <array name="rating_initial_slider_values">
+        <item>1.0</item>
+        <item>5.0</item>
+    </array>
+
+    <string-array name="makes">
+        <item>Audi</item>
+        <item>BMW</item>
+        <item>Citroen</item>
+        <item>Cupra</item>
+        <item>Dacia</item>
+        <item>DS</item>
+        <item>Fiat</item>
+        <item>Ford</item>
+        <item>Honda</item>
+        <item>Hyundai</item>
+        <item>Jaguar</item>
+        <item>Kia</item>
+        <item>Lexus</item>
+        <item>Mazda</item>
+        <item>Mercedes</item>
+        <item>Mini</item>
+        <item>Nissan</item>
+        <item>Opel</item>
+        <item>Peugeot</item>
+        <item>Porsche</item>
+        <item>Renault</item>
+        <item>Skoda</item>
+        <item>Tesla</item>
+        <item>Toyota</item>
+        <item>Volkswagen</item>
+        <item>Volvo</item>
+    </string-array>
+</resources>

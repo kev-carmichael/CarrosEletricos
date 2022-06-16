@@ -3,6 +3,7 @@ package com.example.carroseletricos
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.RecyclerView
+import com.example.carroseletricos.ui.MakeAdapter
 
 class MakeActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
