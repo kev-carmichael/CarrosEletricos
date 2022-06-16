@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Carros Elétricos</string>
+    <string name="btnMarca">Marca</string>
+    <string name="btnPesquisa">Pesquisa avançada</string>
+</resources>
