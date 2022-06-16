@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CarrosEletricos">
         <activity
+            android:name=".CarActivity"
+            android:exported="false" />
+        <activity
             android:name=".MakeActivity"
             android:exported="false" />
         <activity
