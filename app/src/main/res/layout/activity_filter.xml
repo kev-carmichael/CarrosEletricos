@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FilterActivity">
+
+    <TextView
+        android:id="@+id/lblSelectValues"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/normal_spacing"
+        android:gravity="center_horizontal"
+        android:text="@string/lblSelectValues"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.slider.RangeSlider
+        android:id="@+id/sldrPrice"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:stepSize="5000.0"
+        android:valueFrom="0.0"
+        android:valueTo="100000.0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/verticalguideline"
+        app:layout_constraintTop_toBottomOf="@id/lblSelectValues"
+        app:values="@array/price_initial_slider_values" />
+
+    <com.google.android.material.slider.RangeSlider
+        android:id="@+id/sldrAcceleration"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:stepSize="1.0"
+        android:valueFrom="0.0"
+        android:valueTo="25.0"
+        app:values="@array/acceleration_initial_slider_values"
+        app:layout_constraintStart_toEndOf="@id/verticalguideline"
+        app:layout_constraintTop_toBottomOf="@id/sldrPrice"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <com.google.android.material.slider.RangeSlider
+        android:id="@+id/sldrPower"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:stepSize="50.0"
+        android:valueFrom="0.0"
+        android:valueTo="1000.0"
+        app:values="@array/power_initial_slider_values"
+        app:layout_constraintStart_toEndOf="@id/verticalguideline"
+        app:layout_constraintTop_toBottomOf="@id/sldrAcceleration"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <com.google.android.material.slider.RangeSlider
+        android:id="@+id/sldrRange"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:stepSize="50.0"
+        android:valueFrom="0.0"
+        android:valueTo="750.0"
+        app:values="@array/range_initial_slider_values"
+        app:layout_constraintStart_toEndOf="@id/verticalguideline"
+        app:layout_constraintTop_toBottomOf="@id/sldrPower"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <com.google.android.material.slider.RangeSlider
+        android:id="@+id/sldrRating"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:stepSize="1.0"
+        android:valueFrom="1.0"
+        android:valueTo="5.0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/verticalguideline"
+        app:layout_constraintTop_toBottomOf="@id/sldrRange"
+        app:values="@array/rating_initial_slider_values" />
+
+
+    <TextView
+        android:id="@+id/lblPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/lblPrice"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/sldrPrice" />
+
+    <TextView
+        android:id="@+id/lblAcceleration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/lblAcceleration"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/sldrAcceleration" />
+
+    <TextView
+        android:id="@+id/lblPower"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/lblPower"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/sldrPower" />
+
+    <TextView
+        android:id="@+id/lblRange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/lblRange"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/sldrRange" />
+
+    <TextView
+        android:id="@+id/lblRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/lblRating"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/sldrRating" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/verticalguideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.30" />
+
+    <Button
+        android:id="@+id/btnFindCar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/btnFindCar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sldrRating" />
+
+    <TextView
+        android:id="@+id/txtPriceValues"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:gravity="center_horizontal"
+        android:text="@string/range"
+        app:layout_constraintEnd_toEndOf="@+id/sldrPrice"
+        app:layout_constraintStart_toStartOf="@+id/sldrPrice"
+        app:layout_constraintTop_toTopOf="@+id/sldrPrice" />
+
+    <TextView
+        android:id="@+id/txtAccelerationValues"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:gravity="center_horizontal"
+        android:text="@string/range"
+        app:layout_constraintEnd_toEndOf="@id/sldrAcceleration"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="@id/sldrAcceleration"
+        app:layout_constraintTop_toTopOf="@id/sldrAcceleration" />
+
+    <TextView
+        android:id="@+id/txtPowerValues"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:gravity="center_horizontal"
+        android:text="@string/range"
+        app:layout_constraintEnd_toEndOf="@id/sldrPower"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="@id/sldrPower"
+        app:layout_constraintTop_toTopOf="@id/sldrPower" />
+
+    <TextView
+        android:id="@+id/txtRangeValues"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:gravity="center_horizontal"
+        android:text="@string/range"
+        app:layout_constraintEnd_toEndOf="@id/sldrRange"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="@id/sldrRange"
+        app:layout_constraintTop_toTopOf="@id/sldrRange" />
+
+    <TextView
+        android:id="@+id/txtRatingValues"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:gravity="center_horizontal"
+        android:text="@string/range"
+        app:layout_constraintEnd_toEndOf="@id/sldrRating"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="@id/sldrRating"
+        app:layout_constraintTop_toTopOf="@id/sldrRating" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
