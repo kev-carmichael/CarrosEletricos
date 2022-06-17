@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import androidx.recyclerview.widget.RecyclerView
+import com.example.carroseletricos.CarActivity
 import com.example.carroseletricos.R
 
 class MakeAdapter(val context: Context):
@@ -32,7 +33,6 @@ class MakeAdapter(val context: Context):
 
         holder.button.setOnClickListener {
             val intent = Intent(context, CarActivity::class.java)
-            //***********Need to add MAKE to CarActivity*********************
             intent.putExtra(CarActivity.MAKE, holder.button.text)
             context.startActivity(intent)
         }

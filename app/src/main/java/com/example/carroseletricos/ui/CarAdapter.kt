@@ -12,6 +12,8 @@ import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
 import com.example.carroseletricos.CarActivity
 import com.example.carroseletricos.R
+import com.example.carroseletricos.data.Car
+import com.example.carroseletricos.data.CarImages
 
 class CarAdapter (private val carList: List<Car>) :
     RecyclerView.Adapter<CarAdapter.ViewHolder>() {

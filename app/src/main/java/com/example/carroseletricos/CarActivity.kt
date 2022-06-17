@@ -10,7 +10,6 @@ import android.hardware.SensorManager
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.telecom.Call
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
