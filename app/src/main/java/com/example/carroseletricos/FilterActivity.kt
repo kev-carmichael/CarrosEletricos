@@ -14,7 +14,7 @@ class FilterActivity : AppCompatActivity() {
     var priceValues: List<Float> = listOf(0.0f, 100000.0f)
     var accelerationValues: List<Float> = listOf(0.0f, 25.0f)
     var powerValues: List<Float> = listOf(0.0f, 1000.0f)
-    var rangeValues: List<Float> = listOf(0.0f, 750.0f)
+    var rangeValues: List<Float> = listOf(0.0f, 1000.0f)
     var ratingValues: List<Float> = listOf(1.0f, 5.0f)
 
     override fun onCreate(savedInstanceState: Bundle?) {

@@ -2,7 +2,7 @@
 <resources>
     <array name="price_initial_slider_values">
         <item>0.0</item>
-        <item>200000.0</item>
+        <item>100000.0</item>
     </array>
     <array name="acceleration_initial_slider_values">
         <item>0.0</item>

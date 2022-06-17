@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         val btnPesquisa: Button = findViewById(R.id.btnPesquisa)
-        btnMarca.setOnClickListener {
+        btnPesquisa.setOnClickListener {
             val filterIntent = Intent(this, FilterActivity::class.java)
             startActivity(filterIntent)
         }
