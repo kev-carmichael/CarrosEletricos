@@ -42,15 +42,15 @@ class CarAdapter (private val carList: List<Car>) :
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val theCar = carList.get(position)
         CarImages().carMap.get(theCar.id)?.let { holder.imgCar.setImageResource(it) }
-        holder.txtMake.text = "Make: " + theCar.make
-        holder.txtModel.text = "Model: " + theCar.model
-        holder.txtEdition.text = "Edition: " + theCar.edition
-        holder.txtBodyStyle.text = "Model: " + theCar.bodyStyle
-        holder.txtPrice.text = "Price: " + theCar.price.toString()+" €"
-        holder.txtAcceleration.text = "Acceleration: " + theCar.acceleration.toString()+" sec"
-        holder.txtPower.text = "Power: " + theCar.power.toString()+" PS"
-        holder.txtRange.text = "Range: " + theCar.range.toString()+" km"
-        holder.txtRating.text = "Rating: " + theCar.rating.toString()+" stars"
+        holder.txtMake.text = "Marca: " + theCar.make
+        holder.txtModel.text = "Modelo: " + theCar.model
+        holder.txtEdition.text = "Versão: " + theCar.edition
+        holder.txtBodyStyle.text = "Segmento: " + theCar.bodyStyle
+        holder.txtPrice.text = "Preço: " + theCar.price.toString()+" €"
+        holder.txtAcceleration.text = "Acceleração: " + theCar.acceleration.toString()+" seg"
+        holder.txtPower.text = "Potência: " + theCar.power.toString()+" cv"
+        holder.txtRange.text = "Autonomia: " + theCar.range.toString()+" km"
+        holder.txtRating.text = "Classificação: " + theCar.rating.toString()+" estrelas"
         holder.btnMoreInfo.setOnClickListener {
             val url: String = CarActivity.SEARCH_PREFIX +
                     theCar.make
