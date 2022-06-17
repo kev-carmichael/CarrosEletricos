@@ -1,5 +1,6 @@
 package com.example.carroseletricos
 
+import com.example.carroseletricos.data.Car
 import android.content.Context
 import android.content.Intent
 import android.hardware.Sensor
@@ -18,6 +19,9 @@ import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.carroseletricos.api.CarService
+import com.example.carroseletricos.api.ServiceBuilder
+import com.example.carroseletricos.ui.CarAdapter
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
