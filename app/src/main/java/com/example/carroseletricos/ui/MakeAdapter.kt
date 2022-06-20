@@ -33,7 +33,6 @@ class MakeAdapter(val context: Context):
 
         holder.button.setOnClickListener {
             val intent = Intent(context, CarActivity::class.java)
-            //****Think the logic for make only needs to go here instead of the following...****
             intent.putExtra(CarActivity.MAKE, holder.button.text)
             context.startActivity(intent)
         }

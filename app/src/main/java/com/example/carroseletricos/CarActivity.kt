@@ -30,21 +30,6 @@ class CarActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_car)
 
-
-        /*val make = intent?.extras?.getString(MAKE)
-            .toString().replace("\\s".toRegex(),"")
-
-        val btnMoreInfo: Button = findViewById(R.id.btnMoreInfo)
-        btnMoreInfo.setOnClickListener {
-            val url: String = SEARCH_PREFIX + make
-
-            val intent: Intent = Intent().apply {
-                action = Intent.ACTION_VIEW
-                data = Uri.parse(url)
-            }
-            startActivity(intent)
-        }*/
-        //loadData(make)
         loadData()
     }
 
@@ -56,17 +41,14 @@ class CarActivity : AppCompatActivity() {
     }
 
 
-    //private fun loadData(make: String) {
     private fun loadData() {
         val service  = ServiceBuilder.buildService(CarService::class.java)
-        //val requestCall = service.getCar(make)
         val requestCall = service.getAllCar()
 
         requestCall.enqueue(object : Callback<List<Car>> {
             override fun onResponse(call: Call<List<Car>>,
                                     response: Response<List<Car>>
             ) {
-                //****Need to add logic so only one make, if comes from MakeActivity**********
                 if (response.isSuccessful){
                     //filter data
                     for (item: Car in response.body()!!) {
