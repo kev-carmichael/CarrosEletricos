@@ -56,7 +56,7 @@ class CarAdapter (private val carList: List<Car>) :
         holder.txtRating.text = "Classificação: " + theCar.rating.toString()+" estrelas"
         holder.btnMoreInfo.setOnClickListener {
             val url: String = CarActivity.SEARCH_PREFIX +
-                    theCar.make + theCar.model
+                    theCar.make + " " + theCar.model
 
             val intent: Intent = Intent().apply {
                 action = Intent.ACTION_VIEW

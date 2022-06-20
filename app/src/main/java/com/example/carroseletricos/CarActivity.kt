@@ -30,6 +30,7 @@ class CarActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_car)
 
+
         /*val make = intent?.extras?.getString(MAKE)
             .toString().replace("\\s".toRegex(),"")
 
@@ -79,6 +80,10 @@ class CarActivity : AppCompatActivity() {
                             (item.range >= intent?.extras?.getInt("MINRANGE")!!)&&
                             (item.rating <= intent?.extras?.getInt("MAXRATING")!!)&&
                             (item.rating >= intent?.extras?.getInt("MINRATING")!!)){
+                            filteredList.add(item)
+                        }
+                        if(item.make == intent?.extras?.getString(MAKE)
+                                .toString().replace("\\s".toRegex(),"")){
                             filteredList.add(item)
                         }
                     }
