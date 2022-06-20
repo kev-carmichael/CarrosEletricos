@@ -18,7 +18,7 @@
             android:id="@+id/imgCar"
             android:layout_width="match_parent"
             android:layout_height="300dp"
-            android:scaleType="centerCrop" />
+            android:scaleType="centerInside"/>
 
         <TextView
             android:id="@+id/txtMake"
