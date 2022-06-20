@@ -9,6 +9,7 @@ import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.core.content.ContextCompat
+import androidx.core.content.ContextCompat.startActivity
 import androidx.recyclerview.widget.RecyclerView
 import com.example.carroseletricos.CarActivity
 import com.example.carroseletricos.R
@@ -55,13 +56,13 @@ class CarAdapter (private val carList: List<Car>) :
         holder.txtRating.text = "Classificação: " + theCar.rating.toString()+" estrelas"
         holder.btnMoreInfo.setOnClickListener {
             val url: String = CarActivity.SEARCH_PREFIX +
-                    theCar.make
+                    theCar.make + theCar.model
 
             val intent: Intent = Intent().apply {
                 action = Intent.ACTION_VIEW
                 data = Uri.parse(url)
             }
-            ContextCompat.startActivity(holder.btnMoreInfo.context, intent, null)
+            startActivity(holder.btnMoreInfo.context, intent, null)
         }
     }
     }

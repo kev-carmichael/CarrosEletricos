@@ -30,7 +30,7 @@ class CarActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_car)
 
-        val make = intent?.extras?.getString(MAKE)
+        /*val make = intent?.extras?.getString(MAKE)
             .toString().replace("\\s".toRegex(),"")
 
         val btnMoreInfo: Button = findViewById(R.id.btnMoreInfo)
@@ -42,18 +42,21 @@ class CarActivity : AppCompatActivity() {
                 data = Uri.parse(url)
             }
             startActivity(intent)
-        }
-        loadData(make)
+        }*/
+        //loadData(make)
+        loadData()
     }
+
+    val filteredList: MutableList<Car> =  ArrayList<Car>()
 
     companion object {
         const val MAKE = "make"
         const val SEARCH_PREFIX = "https://www.google.co.uk/search?q="
     }
 
-    val filteredList: MutableList<Car> =  ArrayList<Car>()
 
-    private fun loadData(make: String) {
+    //private fun loadData(make: String) {
+    private fun loadData() {
         val service  = ServiceBuilder.buildService(CarService::class.java)
         //val requestCall = service.getCar(make)
         val requestCall = service.getAllCar()
