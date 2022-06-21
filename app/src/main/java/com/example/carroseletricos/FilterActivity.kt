@@ -11,7 +11,7 @@ import com.google.android.material.slider.RangeSlider
 class FilterActivity : AppCompatActivity() {
 
     //****************THESE NEED FINE-TUNING***************************
-    var priceValues: List<Float> = listOf(0.0f, 100000.0f)
+    var priceValues: List<Float> = listOf(0.0f, 120000.0f)
     var accelerationValues: List<Float> = listOf(0.0f, 25.0f)
     var powerValues: List<Float> = listOf(0.0f, 1000.0f)
     var rangeValues: List<Float> = listOf(0.0f, 1000.0f)
