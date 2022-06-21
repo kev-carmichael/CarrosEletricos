@@ -37,7 +37,7 @@ class CarActivity : AppCompatActivity() {
 
     companion object {
         const val MAKE = "make"
-        const val SEARCH_PREFIX = "https://www.google.co.uk/search?q="
+        const val SEARCH_PREFIX = "https://www.google.pt/search?q="
     }
 
 
