@@ -13,6 +13,22 @@ class CarImages {
         13 to R.drawable.fiat500, 14 to R.drawable.fordmustangmache,
         15 to R.drawable.hondae, 16 to R.drawable.hyundaiioniq,
         17 to R.drawable.hyundaiioniq5, 18 to R.drawable.hyundaikauai,
-        200 to R.drawable.vwid3
+        19 to R.drawable.outline, 20 to R.drawable.outline,
+        21 to R.drawable.outline, 22 to R.drawable.outline,
+        23 to R.drawable.outline, 24 to R.drawable.outline,
+        25 to R.drawable.outline, 26 to R.drawable.outline,
+        27 to R.drawable.outline, 28 to R.drawable.outline,
+        29 to R.drawable.outline, 30 to R.drawable.outline,
+        31 to R.drawable.outline, 32 to R.drawable.outline,
+        33 to R.drawable.outline, 34 to R.drawable.outline,
+        35 to R.drawable.outline, 36 to R.drawable.outline,
+        37 to R.drawable.outline, 38 to R.drawable.outline,
+        39 to R.drawable.outline, 40 to R.drawable.outline,
+        41 to R.drawable.outline, 42 to R.drawable.outline,
+        43 to R.drawable.outline, 44 to R.drawable.outline,
+        45 to R.drawable.outline, 46 to R.drawable.outline,
+        47 to R.drawable.outline, 48 to R.drawable.outline,
+        49 to R.drawable.outline, 50 to R.drawable.vwid3,
+        51 to R.drawable.outline
     )
 }
