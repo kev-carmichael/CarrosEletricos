@@ -10,7 +10,7 @@ class CarImages {
         7 to R.drawable.citroenec4, 8 to R.drawable.citroeneberlingo2,
         9 to R.drawable.citroenespacetourer, 10 to R.drawable.cupraborn,
         11 to R.drawable.daciaspring, 12 to R.drawable.ds3,
-        13 to R.drawable.fiat5001, 14 to R.drawable.fordmustangmache2,
+        13 to R.drawable.fiat500, 14 to R.drawable.fordmustangmache2,
         15 to R.drawable.hondae, 16 to R.drawable.hyundaiioniq2,
         17 to R.drawable.hyundaiioniq51, 18 to R.drawable.hyundaikauai1,
         19 to R.drawable.jaguaripace, 20 to R.drawable.kiaev6,
