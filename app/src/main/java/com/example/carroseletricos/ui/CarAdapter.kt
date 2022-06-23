@@ -44,9 +44,9 @@ class CarAdapter (private val carList: List<Car>) :
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val theCar = carList.get(position)
         CarImages().carMap.get(theCar.id)?.let { holder.imgCar.setImageResource(it) }
-        holder.txtMake.text = "Marca: " + theCar.make
-        holder.txtModel.text = "Modelo: " + theCar.model
-        holder.txtEdition.text = "Versão: " + theCar.edition
+        holder.txtMake.text = theCar.make
+        holder.txtModel.text = theCar.model
+        holder.txtEdition.text = theCar.edition
         holder.txtBodyStyle.text = "Segmento: " + theCar.bodyStyle
         holder.txtPrice.text = "Preço: " + theCar.price.toString()+" €"
         holder.txtAcceleration.text = "Acceleração: " + theCar.acceleration.toString()+" seg"
