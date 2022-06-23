@@ -4,7 +4,7 @@ import com.example.carroseletricos.R
 
 class CarImages {
     val carMap = mapOf(
-        1 to R.drawable.audietron, 2 to R.drawable.audietrongt,
+        1 to R.drawable.audietron, 2 to R.drawable.audietrongt1,
         3 to R.drawable.audiq4etron, 4 to R.drawable.bmwi3,
         5 to R.drawable.bmwi4, 6 to R.drawable.bmwix3,
         7 to R.drawable.citroenec4, 8 to R.drawable.citroeneberlingo,
@@ -14,7 +14,7 @@ class CarImages {
         15 to R.drawable.hondae, 16 to R.drawable.hyundaiioniq,
         17 to R.drawable.hyundaiioniq5, 18 to R.drawable.hyundaikauai,
         19 to R.drawable.jaguaripace, 20 to R.drawable.kiaev6,
-        21 to R.drawable.kianiro, 22 to R.drawable.lexusux,
+        21 to R.drawable.kianiro2, 22 to R.drawable.lexusux,
         23 to R.drawable.mazdamx30, 24 to R.drawable.mercedeseqa,
         25 to R.drawable.mercedeseqc, 26 to R.drawable.mercedeseqs,
         27 to R.drawable.mercedeseqv, 28 to R.drawable.mini,
