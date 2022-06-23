@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.ImageView
+import android.widget.RatingBar
 import android.widget.TextView
 import androidx.core.content.ContextCompat.startActivity
 import androidx.recyclerview.widget.RecyclerView
@@ -29,6 +30,9 @@ class CarAdapter (private val carList: List<Car>) :
         val txtPower: TextView = view.findViewById(R.id.txtPower)
         val txtRange: TextView = view.findViewById(R.id.txtRange)
         val txtRating: TextView = view.findViewById(R.id.txtRating)
+
+        val starRating: RatingBar = view.findViewById(R.id.ratingBar1)
+
         val btnMoreInfo: Button = view.findViewById(R.id.btnMoreInfo)
     }
 
@@ -52,7 +56,9 @@ class CarAdapter (private val carList: List<Car>) :
         holder.txtAcceleration.text = "Acceleração: " + theCar.acceleration.toString()+" seg"
         holder.txtPower.text = "Potência: " + theCar.power.toString()+" cv"
         holder.txtRange.text = "Autonomia: " + theCar.range.toString()+" km"
-        holder.txtRating.text = "Classificação: " + theCar.rating.toString()+" estrelas"
+        //holder.txtRating.text = "Classificação: " + theCar.rating.toString()+" estrelas"
+        holder.starRating.rating = theCar.rating.toFloat()
+
         holder.btnMoreInfo.setOnClickListener {
             val url: String = CarActivity.SEARCH_PREFIX +
                     theCar.make + " " + theCar.model
