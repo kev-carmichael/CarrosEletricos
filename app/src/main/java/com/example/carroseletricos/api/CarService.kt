@@ -5,7 +5,7 @@ import retrofit2.Call
 import retrofit2.http.GET
 
 interface CarService {
-    @GET("b/QM6P")
+    @GET("b/AF0J")
     fun getAllCar(): Call<List<Car>>
 
 }
