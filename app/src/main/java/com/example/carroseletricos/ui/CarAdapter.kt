@@ -29,7 +29,7 @@ class CarAdapter (private val carList: List<Car>) :
         val txtAcceleration: TextView = view.findViewById(R.id.txtAcceleration)
         val txtPower: TextView = view.findViewById(R.id.txtPower)
         val txtRange: TextView = view.findViewById(R.id.txtRange)
-        val txtRating: TextView = view.findViewById(R.id.txtRating)
+        //val txtRating: TextView = view.findViewById(R.id.txtRating)
 
         val starRating: RatingBar = view.findViewById(R.id.ratingBar1)
 
