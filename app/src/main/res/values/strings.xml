@@ -4,11 +4,11 @@
     <string name="btnPesquisa">Pesquisa avançada</string>
     <string name="btnMoreInfo">Mais Info</string>
     <string name="lblSelectValues">O que procura?</string>
-    <string name="lblPrice">Preço</string>
-    <string name="lblAcceleration">Acceleração</string>
-    <string name="lblPower">Potência</string>
-    <string name="lblRange">Autonomia</string>
-    <string name="lblRating">Classificação</string>
+    <string name="lblPrice">Preço (€)</string>
+    <string name="lblAcceleration">Accel 0-100km/h (s)</string>
+    <string name="lblPower">Potência (cv)</string>
+    <string name="lblRange">Autonomia (km)</string>
+    <string name="lblRating">Classificação (*)</string>
     <string name="btnFindCar">Ver carros</string>
     <string name="range">Gama: </string>
 </resources>

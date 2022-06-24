@@ -6,15 +6,15 @@
     </array>
     <array name="acceleration_initial_slider_values">
         <item>0.0</item>
-        <item>25.0</item>
+        <item>20.0</item>
     </array>
     <array name="power_initial_slider_values">
         <item>0.0</item>
-        <item>1000.0</item>
+        <item>700.0</item>
     </array>
     <array name="range_initial_slider_values">
         <item>0.0</item>
-        <item>1000.0</item>
+        <item>700.0</item>
     </array>
     <array name="rating_initial_slider_values">
         <item>1.0</item>
