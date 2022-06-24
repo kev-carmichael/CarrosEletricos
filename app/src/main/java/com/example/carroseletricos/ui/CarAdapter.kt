@@ -2,6 +2,7 @@ package com.example.carroseletricos.ui
 
 import android.content.Intent
 import android.net.Uri
+import android.text.SpannableStringBuilder
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -10,6 +11,7 @@ import android.widget.ImageView
 import android.widget.RatingBar
 import android.widget.TextView
 import androidx.core.content.ContextCompat.startActivity
+import androidx.core.text.bold
 import androidx.recyclerview.widget.RecyclerView
 import com.example.carroseletricos.CarActivity
 import com.example.carroseletricos.R
@@ -29,10 +31,7 @@ class CarAdapter (private val carList: List<Car>) :
         val txtAcceleration: TextView = view.findViewById(R.id.txtAcceleration)
         val txtPower: TextView = view.findViewById(R.id.txtPower)
         val txtRange: TextView = view.findViewById(R.id.txtRange)
-        //val txtRating: TextView = view.findViewById(R.id.txtRating)
-
         val starRating: RatingBar = view.findViewById(R.id.ratingBar1)
-
         val btnMoreInfo: Button = view.findViewById(R.id.btnMoreInfo)
     }
 
@@ -51,12 +50,33 @@ class CarAdapter (private val carList: List<Car>) :
         holder.txtMake.text = theCar.make
         holder.txtModel.text = theCar.model
         holder.txtEdition.text = theCar.edition
-        holder.txtBodyStyle.text = "Segmento: " + theCar.bodyStyle
-        holder.txtPrice.text = "Preço: " + theCar.price.toString()+" €"
-        holder.txtAcceleration.text = "Acceleração: " + theCar.acceleration.toString()+" seg"
-        holder.txtPower.text = "Potência: " + theCar.power.toString()+" cv"
-        holder.txtRange.text = "Autonomia: " + theCar.range.toString()+" km"
-        //holder.txtRating.text = "Classificação: " + theCar.rating.toString()+" estrelas"
+
+        val spanBodyStyle = SpannableStringBuilder().append("Segmento"+"\t\t\t\t\t\t")
+            .bold { append(theCar.bodyStyle.toString()) }
+        holder.txtBodyStyle.text = spanBodyStyle
+        //holder.txtBodyStyle.text = "Segmento: " + theCar.bodyStyle
+
+        val spanPrice = SpannableStringBuilder().append("Preço"+"\t\t\t\t\t\t\t\t\t\t")
+            .bold { append(theCar.price.toString()+" €") }
+        holder.txtPrice.text = spanPrice
+        //holder.txtPrice.text = "Preço: " + theCar.price.toString()+" €"
+
+        val spanAcceleration = SpannableStringBuilder().append("Acceleração"+"\t\t\t")
+            .bold { append(theCar.acceleration.toString()+" seg") }
+        holder.txtAcceleration.text = spanAcceleration
+        //holder.txtAcceleration.text = "Acceleração: " + theCar.acceleration.toString()+" seg"
+
+
+        val spanPower = SpannableStringBuilder().append("Potência"+"\t\t\t\t\t\t\t")
+            .bold { append(theCar.power.toString()+" cv") }
+        holder.txtPower.text = spanPower
+        //holder.txtPower.text = "Potência: " + theCar.power.toString()+" cv"
+
+        val spanRange = SpannableStringBuilder().append("Autonomia"+"\t\t\t\t\t")
+            .bold { append(theCar.range.toString()+" km") }
+        holder.txtRange.text = spanRange
+        //holder.txtRange.text = "Autonomia: " + theCar.range.toString()+" km"
+
         holder.starRating.rating = theCar.rating.toFloat()
 
         holder.btnMoreInfo.setOnClickListener {
