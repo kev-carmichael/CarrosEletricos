@@ -54,17 +54,17 @@
             android:id="@+id/ratingBar1"
             style="@android:style/Widget.Material.RatingBar.Small"
             android:layout_marginTop="4dp"
-            android:layout_marginBottom="4dp"
+            android:layout_marginBottom="16dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:progressTint="@color/purple_700"
-
             android:stepSize="1" />
 
         <TextView
             android:id="@+id/txtPrice"
             android:textColor = "?android:textColorPrimary"
             android:textSize="16sp"
+            android:layout_marginBottom="4dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
@@ -72,6 +72,7 @@
             android:id="@+id/txtBodyStyle"
             android:textColor = "?android:textColorPrimary"
             android:textSize="16sp"
+            android:layout_marginBottom="4dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
@@ -79,6 +80,7 @@
             android:id="@+id/txtPower"
             android:textColor = "?android:textColorPrimary"
             android:textSize="16sp"
+            android:layout_marginBottom="4dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
@@ -86,6 +88,7 @@
             android:id="@+id/txtAcceleration"
             android:textColor = "?android:textColorPrimary"
             android:textSize="16sp"
+            android:layout_marginBottom="4dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
